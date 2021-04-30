@@ -1,0 +1,26 @@
+@import "config";
+@import "reset";
+
+body {
+  font-family: "Roboto";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 82.9%;
+  color: $text;
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}
