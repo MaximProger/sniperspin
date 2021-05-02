@@ -18,17 +18,17 @@ $mobile-sm: 375px;
     font-family: $fname;
     font-style: $fstyle;
     font-weight: $fweight;
-    src: local($fname), url($furl) format("truetype");
+    src: local($fname), url($furl) format("woff2");
     // font-display: swap; // Uncomment to initially display system fonts
   }
 }
 
-@include font("Montserrat", normal, 300, "../fonts/Montserrat-Light.ttf");
-@include font("Montserrat", normal, 400, "../fonts/Montserrat-Regular.ttf");
-@include font("Montserrat", normal, 500, "../fonts/Montserrat-Medium.ttf");
-@include font("Montserrat", normal, 600, "../fonts/Montserrat-SemiBold.ttf");
-@include font("Montserrat", normal, 700, "../fonts/Montserrat-Bold.ttf");
-@include font("Montserrat", normal, 900, "../fonts/Montserrat-ExtraBold.ttf");
+@include font("Montserrat", normal, 300, "../fonts/Montserrat-Light.woff2");
+@include font("Montserrat", normal, 400, "../fonts/Montserrat-Regular.woff2");
+@include font("Montserrat", normal, 500, "../fonts/Montserrat-Medium.woff2");
+@include font("Montserrat", normal, 600, "../fonts/Montserrat-SemiBold.woff2");
+@include font("Montserrat", normal, 700, "../fonts/Montserrat-Bold.woff2");
+@include font("Montserrat", normal, 900, "../fonts/Montserrat-ExtraBold.woff2");
 
 .no-xl {
   display: none;

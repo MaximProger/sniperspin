@@ -166,7 +166,6 @@ $(document).ready(function () {
     evt.preventDefault();
     $(".mask").fadeIn();
     $("#recallModal").slideDown(500);
-    var curScrollTop = $(window).scrollTop();
     $("html")
       .addClass("noscroll")
       .css("top", "-" + curScrollTop + "px");
