@@ -121,5 +121,17 @@
 }
 
 @media (max-width: $mobile) {
+  .search {
+    &--header {
+      top: 43px;
+      padding: 10px 36px;
+    }
+  }
+
+  .search__open__btn {
+    img {
+      width: 16px;
+    }
+  }
 }
 // Search END

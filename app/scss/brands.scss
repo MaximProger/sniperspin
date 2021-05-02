@@ -111,5 +111,45 @@
 }
 
 @media (max-width: $mobile) {
+  .brands {
+    padding: 20px 0;
+  }
+
+  .brands__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 11px;
+  }
+
+  .brands__arrow {
+    display: none;
+  }
+
+  .brands__slides {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .brands__slide {
+    width: 90px !important;
+    max-width: 90px !important;
+    min-width: 90px;
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+  }
+
+  .brands__img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .brand__link {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 // Brands END

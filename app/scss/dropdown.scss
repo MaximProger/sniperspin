@@ -6,6 +6,16 @@
   left: 0;
   box-shadow: 0px 4px 20px rgba(92, 92, 92, 0.15);
   z-index: 4;
+
+  &--desktop {
+    .dropdown__link {
+      &:hover {
+        .dropdown__inner__list {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
 .dropdown__list {
@@ -24,12 +34,6 @@
 
   &:last-child {
     border-bottom: none;
-  }
-
-  &:hover {
-    .dropdown__inner__list {
-      display: block;
-    }
   }
 }
 
@@ -127,5 +131,89 @@
 }
 
 @media (max-width: $mobile) {
+  .dropdown {
+    &--menu {
+      display: block;
+      position: static;
+      background: none;
+      width: 100%;
+      max-width: 100%;
+
+      .dropdown__arrow {
+        transition: all 0.2s linear;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+  .dropdown__list {
+    width: 100%;
+    background: none;
+    padding: none;
+  }
+
+  .dropdown__item {
+    height: 45px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-left: 23px;
+    padding-right: 23px;
+    text-decoration: none;
+
+    &--active {
+      .dropdown__arrow {
+        transform: rotate(-90deg);
+      }
+    }
+
+    &:hover {
+      .dropdown__arrow {
+        span {
+          background: url("../images/dest/icons/dropdown__arrow.svg") no-repeat
+            center;
+        }
+      }
+
+      .dropdown__text {
+        color: #828282;
+      }
+    }
+  }
+
+  .dropdown__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    &--flex {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
+
+  .dropdown__text__icon {
+    margin-right: 9px;
+  }
+
+  .dropdown__inner__list {
+    position: static;
+    width: 100%;
+    padding: 0;
+  }
+
+  .dropdown__inner__link {
+    padding: 0;
+    padding-left: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 45px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 // Dropdown END

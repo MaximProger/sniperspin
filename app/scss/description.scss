@@ -71,5 +71,38 @@
 }
 
 @media (max-width: $mobile) {
+  .description {
+    padding: 40px 0;
+  }
+
+  .description__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 15px;
+  }
+
+  .description__hidden {
+    display: none;
+  }
+
+  .description__more__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .description__more {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 12px;
+    line-height: 15px;
+    color: #828282;
+
+    img {
+      margin-left: 10px;
+    }
+  }
 }
 // Description END

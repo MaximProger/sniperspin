@@ -1,0 +1,54 @@
+// Menu
+.menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 100%;
+  height: calc(100vh - 64px);
+  background: #fff;
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+.menu__wrapper {
+  width: 100%;
+  bottom: 0;
+}
+
+.menu__header {
+  background: #f2f2f2;
+  box-shadow: 0px 4px 15px rgba(92, 92, 92, 0.2);
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.menu__footer {
+  padding: 16px 20px 32px;
+}
+
+.menu__phone {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #828282;
+}
+
+.menu__back {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: #828282;
+}
+
+.menu__back__arrow {
+  margin-right: 9px;
+}
+// Menu END

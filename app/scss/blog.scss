@@ -61,5 +61,14 @@
 }
 
 @media (max-width: $mobile) {
+  .blog__item {
+    width: 280px !important;
+    max-width: 280px !important;
+    height: 330px;
+  }
+
+  .blog__img {
+    max-width: 280px;
+  }
 }
 // Blog END

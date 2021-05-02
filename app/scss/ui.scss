@@ -138,4 +138,14 @@ body {
 }
 
 @media (max-width: $mobile) {
+  .section {
+    margin-bottom: 40px;
+  }
+
+  .logo {
+    img {
+      width: 120px;
+      height: 18.15px;
+    }
+  }
 }

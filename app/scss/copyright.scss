@@ -41,5 +41,24 @@
 }
 
 @media (max-width: $mobile) {
+  .copyright {
+    padding-top: 11px;
+    padding-bottom: 27px;
+  }
+
+  .copyright__item {
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .copyright__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 // Copyright END

@@ -9,6 +9,20 @@ $(document).ready(function () {
   $("#burgerBtn").click((evt) => {
     evt.preventDefault();
     $("#dropdownMenu").slideToggle();
+    $("#burgerBtn").toggleClass("header__burger--active");
+  });
+
+  $("#menuBtn").click((evt) => {
+    evt.preventDefault();
+    if ($("#menuBtn").hasClass("header__burger--active")) {
+      $("#menuBtn").removeClass("header__burger--active");
+      $(".menu").slideUp();
+      $("html").removeClass("noscroll");
+    } else {
+      $("#menuBtn").addClass("header__burger--active");
+      $("html").addClass("noscroll");
+      $("#menu").slideDown();
+    }
   });
 
   // // Слайдер интро
@@ -47,6 +61,14 @@ $(document).ready(function () {
             centerMode: false,
           },
         },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 3,
+            arrows: false,
+            centerMode: false,
+          },
+        },
       ],
     });
 
@@ -67,6 +89,14 @@ $(document).ready(function () {
           breakpoint: 1199,
           settings: {
             slidesToShow: 2,
+            centerMode: false,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
             centerMode: false,
             arrows: false,
           },
@@ -99,6 +129,14 @@ $(document).ready(function () {
           breakpoint: 1199,
           settings: {
             slidesToShow: 2,
+            centerMode: false,
+            arrows: false,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
             centerMode: false,
             arrows: false,
           },
@@ -168,5 +206,41 @@ $(document).ready(function () {
 
   $("#openSearch").click((evt) => {
     $("#searchHeader").slideToggle();
+  });
+
+  // Дропдаун телефон
+  $("#catalogMenu .dropdown__item").click(function (evt) {
+    evt.preventDefault();
+
+    const dropdownItemParent = $(this).parents(".dropdown__link");
+    const dropDownInnerList = dropdownItemParent.find(".dropdown__inner__list");
+
+    if ($(this).hasClass("dropdown__item--active")) {
+      $(this).removeClass("dropdown__item--active");
+      dropDownInnerList.slideUp();
+    } else {
+      $("#catalogMenu .dropdown__item").removeClass("dropdown__item--active");
+      $("#catalogMenu .dropdown__inner__list").slideUp();
+      $(this).addClass("dropdown__item--active");
+      dropDownInnerList.slideDown();
+    }
+  });
+
+  // Попап кнопка "Назад"
+  $(".menu__back").click(function (evt) {
+    evt.preventDefault();
+    $(this).parents(".menu").slideUp();
+  });
+
+  $("#menu div.dropdown__item").click(function (evt) {
+    const neededId = "#" + $(this).data("menu");
+    $(neededId).slideDown();
+  });
+
+  // Показать текст в описании
+  $("#showText").click((evt) => {
+    evt.preventDefault();
+    $(".description__hidden").slideDown();
+    $(".description__more").fadeOut();
   });
 });

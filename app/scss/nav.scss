@@ -104,5 +104,8 @@
 }
 
 @media (max-width: $mobile) {
+  .nav {
+    display: none;
+  }
 }
 // Nav END

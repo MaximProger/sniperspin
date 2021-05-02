@@ -54,7 +54,10 @@
 		<div class="container">
 			<div class="header__inner">
 				<div class="header__left">
-					<button type="button" class="header__burger" id="burgerBtn">
+					<button type="button" class="header__burger no-xs" id="burgerBtn">
+						<span></span>
+					</button>
+					<button type="button" class="header__burger no-xl xs" id="menuBtn">
 						<span></span>
 					</button>
 					<a href="/" class="logo">
@@ -127,19 +130,6 @@
 								</button>
 							</div>
 						</form>
-
-						<!-- <div class="search__btns__wrapper no-xl md">
-							<div class="header__btns">
-								<a href="#" class="header__btns__item">
-									<img src="./images/dest/icons/heart.svg" alt="heart" class="header__btns__icon">
-									<span class="header__btns__value">24</span>
-								</a>
-								<a href="#" class="header__btns__item">
-									<img src="./images/dest/icons/cart.svg" alt="cart" class="header__btns__icon">
-									<span class="header__btns__value">12</span>
-								</a>
-							</div>
-						</div> -->
 					</div>
 					<button type="button" class="search__open__btn no-xl md" id="openSearch">
 						<img src="./images/dest/icons/search__btn.svg" alt="search">
@@ -156,7 +146,7 @@
 					</div>
 				</div>
 			</div>
-			<nav class="dropdown" id="dropdownMenu">
+			<nav class="dropdown dropdown--desktop" id="dropdownMenu">
 				<div class="dropdown__list">
 					<a href="#" class="dropdown__link">
 						<div class="dropdown__item">
@@ -1379,49 +1369,60 @@
 					FoxFishing.ru. Количество рыболовов, которые воспользовались услугой онлайн покупки, неизменно растет. Это
 					касается не только Москвы, но и регионов в разных частях России. Мы предлагаем покупателям ряд преференций.
 				</p>
-				<h3 class="description__inner__title">
-					Наши преимущества
-				</h3>
-				<p class="description__text">
-					Начав работать в 2007 г, Фоксфишинг.ру постоянно улучшает качество обслуживания и увеличивает свой
-					ассортимент. Благодаря ответственному отношению удается повышать число покупателей.
-				</p>
-				<ul class="description__list">
-					<li class="description__item">
-						Одной из главных причин популярности магазина является приемлемая цена на товары для рыбалки. Кроме того,
-						работает специальная программа лояльности "Fox-бонус", благодаря которой можно вернуть на свой личный счет
-						до 20% от стоимости покупки.
-					</li>
-					<li class="description__item">
-						Устраивает наших потребителей и быстрая доставка купленной продукции. Столичным рыболовам курьеры привозят
-						заказ в течение 1 рабочего дня. Самые нетерпеливые жители Москвы могут забрать рыболовные принадлежности
-						через 2 ч после оформления
-					</li>
-					<li class="description__item">
-						На нашем складе в наличии имеется более 15000 рыболовных товаров. Все они взяты на реализацию у официальных
-						представителей. Важным преимуществом покупки в FoxFishing.ru будет наличие гарантийного талона.
-					</li>
-					<li class="description__item">
-						Наши сотрудники являются активными рыбаками, некоторые из них профессиональные спортсмены. Поэтому они
-						смогут помочь любителям с выбором наиболее подходящей снасти или снаряжения.
-					</li>
-				</ul>
-				<h3 class="description__inner__title">
-					Наш ассортимент
-				</h3>
-				<p class="description__text">
-					Найти и купить товар для рыбалки или отдыха на сайте Фоксфишинг.ру очень просто. Каталог разбит на популярные
-					разделы, в каждом из них можно забить дополнительные параметры для поиска. Еще проще воспользоваться поисковой
-					строкой, особенно, если известно название или модель изделия.
-				</p>
-				<p class="description__text">
-					Многие рыболовные снасти, аксессуары, снаряжение уже опробованы нашими покупателями. Они делятся своими
-					впечатлениями о снастях на соответствующей страничке в отзывах.
-				</p>
-				<p class="description__text">
-					В карточке изделия имеется вся информация о технических характеристиках. Здесь же можно узнать о размере
-					скидки по акции "Fox-бонус", о времени доставки или самовывоза.
-				</p>
+				<div class="description__hidden">
+					<h3 class="description__inner__title">
+						Наши преимущества
+					</h3>
+					<p class="description__text">
+						Начав работать в 2007 г, Фоксфишинг.ру постоянно улучшает качество обслуживания и увеличивает свой
+						ассортимент. Благодаря ответственному отношению удается повышать число покупателей.
+					</p>
+					<ul class="description__list">
+						<li class="description__item">
+							Одной из главных причин популярности магазина является приемлемая цена на товары для рыбалки. Кроме того,
+							работает специальная программа лояльности "Fox-бонус", благодаря которой можно вернуть на свой личный счет
+							до 20% от стоимости покупки.
+						</li>
+						<li class="description__item">
+							Устраивает наших потребителей и быстрая доставка купленной продукции. Столичным рыболовам курьеры привозят
+							заказ в течение 1 рабочего дня. Самые нетерпеливые жители Москвы могут забрать рыболовные принадлежности
+							через 2 ч после оформления
+						</li>
+						<li class="description__item">
+							На нашем складе в наличии имеется более 15000 рыболовных товаров. Все они взяты на реализацию у
+							официальных
+							представителей. Важным преимуществом покупки в FoxFishing.ru будет наличие гарантийного талона.
+						</li>
+						<li class="description__item">
+							Наши сотрудники являются активными рыбаками, некоторые из них профессиональные спортсмены. Поэтому они
+							смогут помочь любителям с выбором наиболее подходящей снасти или снаряжения.
+						</li>
+					</ul>
+					<h3 class="description__inner__title">
+						Наш ассортимент
+					</h3>
+					<p class="description__text">
+						Найти и купить товар для рыбалки или отдыха на сайте Фоксфишинг.ру очень просто. Каталог разбит на
+						популярные
+						разделы, в каждом из них можно забить дополнительные параметры для поиска. Еще проще воспользоваться
+						поисковой
+						строкой, особенно, если известно название или модель изделия.
+					</p>
+					<p class="description__text">
+						Многие рыболовные снасти, аксессуары, снаряжение уже опробованы нашими покупателями. Они делятся своими
+						впечатлениями о снастях на соответствующей страничке в отзывах.
+					</p>
+					<p class="description__text">
+						В карточке изделия имеется вся информация о технических характеристиках. Здесь же можно узнать о размере
+						скидки по акции "Fox-бонус", о времени доставки или самовывоза.
+					</p>
+				</div>
+				<div class="description__more__wrapper">
+					<a href="#" class="description__more" id="showText">
+						<span>Читать все</span>
+						<img src="./images/dest/icons/arrow__down.svg" alt="arrow">
+					</a>
+				</div>
 			</div>
 		</section>
 		<!-- Description END -->
@@ -1774,7 +1775,7 @@
 						<img src="./images/dest/icons/wallet.svg" alt="wallet" class="footer__bot__logos">
 					</div>
 
-					<div class="social">
+					<div class="social social--footer">
 						<a href="#" class="social__item">
 							<img src="./images/dest/icons/telegram.svg" alt="telegram" class="social__icon">
 						</a>
@@ -1855,6 +1856,680 @@
 	<button type="button" class="button__up" id="buttonUp">
 		<img src="./images/dest/icons/up.svg" alt="up">
 	</button>
+
+	<div class="menu" id="menu">
+		<div class="menu__wrapper">
+			<div class="menu__header">
+				<a href="#" class="subheader__location">
+					<span class="subheader__locaion__description">
+						Ваш город:
+					</span>
+					<span class="subheader__location__text">
+						Москва
+					</span>
+					<span class="subheader__location__arrow"></span>
+				</a>
+			</div>
+
+			<div class="menu__body">
+				<div class="dropdown__link">
+
+					<div class="dropdown__item">
+						<div class="subheader__auth">
+							<a href="" class="subheader__auth__item subheader__auth__item--special">
+								<span class="subheader__auth__icon"></span>
+								Войти
+							</a>
+							<span class="subheader__auth__line"></span>
+							<a href="" class="subheader__auth__item">
+								Регистрация
+							</a>
+						</div>
+					</div>
+
+					<div class="dropdown__item" data-menu="catalogMenu" id="openCatalog">
+						<span class="dropdown__text dropdown__text--flex">
+							<img class="dropdown__text__icon" src="./images/dest/icons/catalog.svg" alt="catalog">
+							Каталог
+						</span>
+						<button type="button" class="dropdown__arrow">
+							<span></span>
+						</button>
+					</div>
+
+					<a href="#" class="dropdown__item">
+						<span class="dropdown__text dropdown__text--flex">
+							<img class="dropdown__text__icon" src="./images/dest/icons/heart--orange.svg" alt="heart">
+							Избранное
+						</span>
+					</a>
+
+					<div href="#" class="dropdown__item" data-menu="customerMenu">
+						<span class="dropdown__text">
+							Для клиентов
+						</span>
+						<button type="button" class="dropdown__arrow">
+							<span></span>
+						</button>
+					</div>
+
+					<a href="#" class="dropdown__item">
+						<span class="dropdown__text">
+							Блог
+						</span>
+					</a>
+
+					<a href="#" class="dropdown__item">
+						<span class="dropdown__text">
+							Новости
+						</span>
+					</a>
+
+					<a href="#" class="dropdown__item">
+						<span class="dropdown__text">
+							Отзывы
+						</span>
+					</a>
+
+				</div>
+			</div>
+
+			<div class="menu__footer">
+				<span class="menu__phone">
+					8 (800) 000-00-00
+				</span>
+				<div class="social social--menu">
+					<a href="#" class="social__item">
+						<img src="./images/dest/icons/telegram--gray.svg" alt="telegram" class="social__icon">
+					</a>
+					<a href="#" class="social__item">
+						<img src="./images/dest/icons/facebook--gray.svg" alt="facebook" class="social__icon">
+					</a>
+					<a href="#" class="social__item">
+						<img src="./images/dest/icons/youtube--gray.svg" alt="youtube" class="social__icon">
+					</a>
+					<a href="#" class="social__item">
+						<img src="./images/dest/icons/instagram--gray.svg" alt="instagram" class="social__icon">
+					</a>
+					<a href="#" class="social__item">
+						<img src="./images/dest/icons/vk--gray.svg" alt="vk" class="social__icon">
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="menu" id="catalogMenu">
+		<div class="menu__wrapper">
+			<div class="menu__header">
+				<a href="#" class="menu__back">
+					<img src="./images/dest/icons/back.svg" alt="back" class="menu__back__arrow">
+					Назад
+				</a>
+			</div>
+
+			<div class="menu__body">
+				<nav class="dropdown dropdown--menu">
+					<div class="dropdown__list">
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Акции
+								</span>
+							</div>
+						</a>
+
+						<div class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Спиннинги
+								</span>
+								<button type="button" class="dropdown__arrow">
+									<span></span>
+								</button>
+							</div>
+							<div class="dropdown__inner__list">
+								<a href="#" class="dropdown__inner__link">
+									Воблеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Силиконовые приманки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Вращающиеся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Колеблющееся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мандула
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Зимние блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Балансиры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бокоплавы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мормышки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Поролоновые рыбки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Цикады
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Тейл-спиннеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Стримеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Наборы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Пилькеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бактэйл
+								</a>
+							</div>
+						</div>
+
+						<div class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Удилища
+								</span>
+								<button type="button" class="dropdown__arrow">
+									<span></span>
+								</button>
+							</div>
+							<div class="dropdown__inner__list">
+								<a href="#" class="dropdown__inner__link">
+									Стримеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Наборы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Воблеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Силиконовые приманки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Вращающиеся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Колеблющееся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мандула
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Зимние блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Балансиры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бокоплавы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мормышки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Поролоновые рыбки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Цикады
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Тейл-спиннеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Пилькеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бактэйл
+								</a>
+							</div>
+						</div>
+
+						<div class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Катушки
+								</span>
+								<button type="button" class="dropdown__arrow">
+									<span></span>
+								</button>
+							</div>
+							<div class="dropdown__inner__list">
+								<a href="#" class="dropdown__inner__link">
+									Вращающиеся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Колеблющееся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Воблеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Силиконовые приманки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мандула
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Зимние блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Балансиры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бокоплавы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мормышки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Поролоновые рыбки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Цикады
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Тейл-спиннеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Стримеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Наборы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Пилькеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бактэйл
+								</a>
+							</div>
+						</div>
+
+						<div class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Приманки
+								</span>
+								<button type="button" class="dropdown__arrow">
+									<span></span>
+								</button>
+							</div>
+							<div class="dropdown__inner__list">
+								<a href="#" class="dropdown__inner__link">
+									Тейл-спиннеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Воблеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Силиконовые приманки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Вращающиеся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Колеблющееся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мандула
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Зимние блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Балансиры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бокоплавы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мормышки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Поролоновые рыбки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Цикады
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Стримеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Наборы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Пилькеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бактэйл
+								</a>
+							</div>
+						</div>
+
+						<div class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Леска
+								</span>
+								<button type="button" class="dropdown__arrow">
+									<span></span>
+								</button>
+							</div>
+							<div class="dropdown__inner__list">
+								<a href="#" class="dropdown__inner__link">
+									Зимние блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Воблеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Силиконовые приманки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Вращающиеся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Колеблющееся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мандула
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Балансиры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бокоплавы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мормышки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Поролоновые рыбки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Цикады
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Тейл-спиннеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Стримеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Наборы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Пилькеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бактэйл
+								</a>
+							</div>
+						</div>
+
+						<div class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Оснастка
+								</span>
+								<button type="button" class="dropdown__arrow">
+									<span></span>
+								</button>
+							</div>
+							<div class="dropdown__inner__list">
+								<a href="#" class="dropdown__inner__link">
+									Бактэйл
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Воблеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Силиконовые приманки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Вращающиеся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Колеблющееся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мандула
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Зимние блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Балансиры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бокоплавы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мормышки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Поролоновые рыбки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Цикады
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Тейл-спиннеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Стримеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Наборы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Пилькеры
+								</a>
+							</div>
+						</div>
+
+						<div class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Аксессуары
+								</span>
+								<button type="button" class="dropdown__arrow">
+									<span></span>
+								</button>
+							</div>
+							<div class="dropdown__inner__list">
+								<a href="#" class="dropdown__inner__link">
+									Мандула
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Зимние блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Балансиры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бокоплавы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Воблеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Силиконовые приманки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Вращающиеся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Колеблющееся блесны
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Мормышки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Поролоновые рыбки
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Цикады
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Тейл-спиннеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Стримеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Наборы
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Пилькеры
+								</a>
+								<a href="#" class="dropdown__inner__link">
+									Бактэйл
+								</a>
+							</div>
+						</div>
+
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Экипировка
+								</span>
+							</div>
+						</a>
+
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Питание
+								</span>
+							</div>
+						</a>
+
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Комфорт
+								</span>
+							</div>
+						</a>
+
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Зимняя рыбалка
+								</span>
+							</div>
+						</a>
+
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									На сома
+								</span>
+							</div>
+						</a>
+					</div>
+				</nav>
+			</div>
+
+
+		</div>
+	</div>
+
+	<div class="menu" id="customerMenu">
+		<div class="menu__wrapper">
+			<div class="menu__header">
+				<a href="#" class="menu__back">
+					<img src="./images/dest/icons/back.svg" alt="back" class="menu__back__arrow">
+					Назад
+				</a>
+			</div>
+
+			<div class="menu__body">
+				<nav class="dropdown dropdown--menu">
+					<div class="dropdown__list">
+
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Покупателям
+								</span>
+							</div>
+						</a>
+
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Доставка
+								</span>
+							</div>
+						</a>
+
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Гарантитя
+								</span>
+							</div>
+						</a>
+
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Способы оплаты
+								</span>
+							</div>
+						</a>
+
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Каксделать заказ
+								</span>
+							</div>
+						</a>
+
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Возврат товара
+								</span>
+							</div>
+						</a>
+
+						<a href="#" class="dropdown__link">
+							<div class="dropdown__item">
+								<span class="dropdown__text">
+									Возврат денежных средств
+								</span>
+							</div>
+						</a>
+
+
+					</div>
+				</nav>
+			</div>
+
+
+		</div>
+	</div>
 	<!-- Modals END -->
 
 	<!-- jQuery -->
