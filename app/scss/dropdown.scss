@@ -1,0 +1,131 @@
+// Dropdown
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 72px;
+  left: 0;
+  box-shadow: 0px 4px 20px rgba(92, 92, 92, 0.15);
+  z-index: 4;
+}
+
+.dropdown__list {
+  width: 254px;
+  padding: 6px 0;
+  position: relative;
+  background: #fff;
+}
+
+.dropdown__link {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #e0e0e0;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    .dropdown__inner__list {
+      display: block;
+    }
+  }
+}
+
+.dropdown__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 19px 10px 35px;
+
+  &:hover {
+    .dropdown__arrow {
+      span {
+        background: url("../images/dest/icons/dropdown__arrow--active.svg")
+          no-repeat center;
+      }
+    }
+
+    .dropdown__text {
+      color: $orange;
+    }
+  }
+}
+
+.dropdown__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  transition: all 0.2s linear;
+}
+
+.dropdown__arrow {
+  span {
+    display: block;
+    background: url("../images/dest/icons/dropdown__arrow.svg") no-repeat center;
+    width: 8px;
+    height: 14px;
+    transition: all 0.2s linear;
+  }
+}
+
+.dropdown__inner__list {
+  display: none;
+  position: absolute;
+  right: -254px;
+  top: 0;
+  background: #fff;
+  width: 254px;
+  padding: 6px 0;
+}
+
+.dropdown__inner__link {
+  padding: 10px 19px 10px 35px;
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #e0e0e0;
+  transition: all 0.2s linear;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+@media (max-width: $tablet) {
+  .dropdown {
+    top: 60px;
+  }
+
+  .dropdown__item {
+    height: 35px;
+  }
+
+  .dropdown__text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .dropdown__inner__link {
+    font-size: 13px;
+    line-height: 16px;
+    color: #bdbdbd;
+    border-color: #bdbdbd;
+    height: 36px;
+  }
+}
+
+@media (max-width: $mobile) {
+}
+// Dropdown END

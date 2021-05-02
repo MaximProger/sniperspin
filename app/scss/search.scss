@@ -1,0 +1,125 @@
+// Search
+.search {
+  &--footer {
+    .search__input {
+      width: 240px;
+    }
+  }
+}
+
+.search__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search__input {
+  width: 278px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-right: none;
+  background: $black;
+  color: #fff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  padding-left: 15px;
+  transition: all 0.2s linear;
+
+  &:focus,
+  &:active {
+    background: #ebebeb;
+    border-color: #ebebeb;
+    color: $text;
+  }
+}
+
+.search__btn {
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+
+  &:hover {
+    background: $orange;
+  }
+}
+
+@media (max-width: $tablet) {
+  .search {
+    &--header {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      z-index: 10;
+      background: #111111;
+      width: 100%;
+      // display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.2s easy;
+      padding: 25px 15px;
+
+      .search__form {
+        width: 100%;
+      }
+
+      .search__input {
+        border: 1px solid $orange;
+        max-width: 100%;
+        width: 100%;
+        background: #fff;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 15px;
+
+        &::placeholder {
+          font-family: Montserrat;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 15px;
+          color: #bdbdbd;
+        }
+      }
+
+      .search__open__btn {
+        transition: all 0.2s linear;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+
+      .search__icon {
+        width: 18px;
+        height: 18px;
+      }
+
+      .search__btn {
+        background: $orange;
+        min-height: 40px;
+        min-width: 40px;
+      }
+
+      .search__btns__wrapper {
+        .header__btns {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+}
+// Search END

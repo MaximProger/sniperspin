@@ -1,0 +1,133 @@
+// Intro
+.intro__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.intro__slides {
+  width: 870px;
+
+  .slick-list {
+    padding: 0 !important;
+  }
+}
+
+.intro__slide {
+  position: relative;
+  width: 870px !important;
+  height: 390px;
+}
+
+.intro__slide__img {
+  display: block;
+  width: 870px;
+  height: 390px;
+  min-width: 870px;
+  min-height: 390px;
+  max-width: 870px;
+  max-height: 390px;
+}
+
+.intro__slide__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+  position: absolute;
+  top: 32px;
+  left: 35px;
+}
+
+.intro__slide__btn {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  width: 260px;
+  height: 55px;
+}
+
+.intro__nav {
+  width: 300px;
+  box-shadow: 0px 4px 20px rgba(92, 92, 92, 0.15);
+}
+
+.intro__nav__item {
+  display: flex !important;
+  justify-content: flex-start;
+  align-items: center;
+  height: 65px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text;
+  padding-left: 25px;
+  padding-right: 21px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: all 0.2s linear;
+  width: 100% !important;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  // &--active,
+  &:hover,
+  &.slick-current {
+    background: #e1e2e2;
+  }
+}
+
+@media (max-width: $tablet) {
+  .intro__slides {
+    width: 499px;
+  }
+
+  .intro__slide {
+    width: 499px !important;
+    height: 227px;
+  }
+
+  .intro__slide__img {
+    width: 499px;
+    height: 227px;
+    min-width: 499px;
+    min-height: 227px;
+    max-width: 499px;
+    max-height: 227px;
+  }
+
+  .intro__slide__title {
+    font-size: 24px;
+    line-height: 29px;
+    top: 15px;
+    left: 25px;
+  }
+
+  .intro__slide__btn {
+    width: 210px;
+    height: 45px;
+    font-size: 16px;
+    line-height: 20px;
+    bottom: 25px;
+    right: 50px;
+  }
+
+  .intro__nav {
+    width: 229px;
+  }
+
+  .intro__nav__item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    height: 37.83px;
+    padding-left: 19px;
+    padding-right: 16px;
+  }
+}
+
+@media (max-width: $mobile) {
+}
+// Intro END

@@ -1,0 +1,160 @@
+// Subheader
+.subheader {
+  padding-top: 6px;
+  padding-bottom: 9px;
+}
+
+.subheader__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subheader__location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-decoration: none;
+
+  &:hover {
+    .subheader__location__text {
+      border-color: transparent;
+    }
+  }
+}
+
+.subheader__location__icon {
+  display: inline-block;
+  width: 20px;
+  height: 24px;
+  background: url("../images/dest/icons/location.svg") no-repeat center;
+  margin-right: 21px;
+  transition: all 0.2s linear;
+}
+
+.subheader__location__text {
+  display: inline-block;
+  color: $orange;
+  transition: all 0.2s linear;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  border-bottom: 1px dashed $orange;
+  margin-right: 6px;
+  transition: all 0.2s linear;
+}
+
+.subheader__location__arrow {
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: url("../images/dest/icons/subheader__arrow.svg") no-repeat center;
+}
+
+.subheader__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.subheader__auth {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 26px;
+}
+
+.subheader__auth__item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: $orange;
+  transition: all 0.2s linear;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &:hover {
+    color: $orange--dark;
+
+    .subheader__auth__icon {
+      background: url("../images/dest/icons/enter--dark.svg") no-repeat center;
+    }
+  }
+}
+
+.subheader__auth__icon {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("../images/dest/icons/enter.svg") no-repeat center;
+  transition: all 0.2s linear;
+  margin-right: 8px;
+}
+
+.subheader__auth__line {
+  height: 17px;
+  width: 1px;
+  background: $orange;
+  margin: 0 10px;
+}
+
+.subheader__btn {
+  width: 188px;
+  height: 35px;
+  margin-left: 27px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.subheader__phone {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: $orange;
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: $orange--dark;
+  }
+}
+
+@media (max-width: $tablet) {
+  .subheader__location__icon {
+    width: 17px;
+    height: 20px;
+    background: url("../images/dest/icons/location--tablet.svg") no-repeat
+      center;
+  }
+
+  .subheader__location__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    margin-right: 8px;
+    padding: 0 1px;
+  }
+
+  .subheader__phone {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .subheader__btn {
+    margin-left: 45px;
+  }
+
+  .subheader__auth__item {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: $mobile) {
+}
+// Subheader END

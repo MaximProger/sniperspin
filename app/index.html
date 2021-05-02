@@ -30,7 +30,7 @@
 
 				<div class="subheader__right">
 					<a href="tel:8 (800) 000-00-00" class="subheader__phone">8 (800) 000-00-00</a>
-					<button type="button" class="btn subheader__btn">
+					<button type="button" class="btn subheader__btn recall">
 						Обратный звонок
 					</button>
 					<div class="subheader__auth">
@@ -114,16 +114,36 @@
 					</ul>
 				</nav>
 				<div class="header__right">
-					<div class="search">
+					<div class="search search--header" id="searchHeader">
 						<form id="searchForm" name="searchForm" class="search__form">
 							<div class="search__item">
-								<input type="text" id="search" name="search" class="search__input">
+								<input type="text" id="searchHeaderInput" name="searchHeaderInput" class="search__input">
 								<button type="submit" class="search__btn" id="searchSubmit">
-									<img src="./images/dest/icons/search.svg" class="search__icon" alt="">
+									<picture class="intro__img__pfroffesional">
+										<source srcset="./images/dest/icons/search__btn.svg" media="(max-width: 1199px)" />
+										<img src="./images/dest/icons/search.svg" class="search__icon" alt="search">
+									</picture>
+
 								</button>
 							</div>
 						</form>
+
+						<!-- <div class="search__btns__wrapper no-xl md">
+							<div class="header__btns">
+								<a href="#" class="header__btns__item">
+									<img src="./images/dest/icons/heart.svg" alt="heart" class="header__btns__icon">
+									<span class="header__btns__value">24</span>
+								</a>
+								<a href="#" class="header__btns__item">
+									<img src="./images/dest/icons/cart.svg" alt="cart" class="header__btns__icon">
+									<span class="header__btns__value">12</span>
+								</a>
+							</div>
+						</div> -->
 					</div>
+					<button type="button" class="search__open__btn no-xl md" id="openSearch">
+						<img src="./images/dest/icons/search__btn.svg" alt="search">
+					</button>
 					<div class="header__btns">
 						<a href="#" class="header__btns__item">
 							<img src="./images/dest/icons/heart.svg" alt="heart" class="header__btns__icon">
@@ -714,7 +734,16 @@
 					</h2>
 					<div class="compilation__list">
 						<a href="#" class="compilation__item">
-							<img src="./images/dest/compilation/1.png" alt="img" class="compilation__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/compilation/1--mobile.webp"
+									media="(max-width: 767px)" />
+								<source srcset="./images/dest/compilation/1--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/1--tablet.webp"
+									media="(max-width: 1199px)" />
+								<source srcset="./images/dest/compilation/1--tablet.png" media="(max-width: 1199px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/1.webp">
+								<img src="./images/dest/compilation/1.png" alt="img" class="compilation__img">
+							</picture>
 							<div class="compilation__mask"></div>
 							<h3 class="compilation__inner__title">
 								Удилища
@@ -722,7 +751,16 @@
 						</a>
 
 						<a href="#" class="compilation__item">
-							<img src="./images/dest/compilation/2.png" alt="img" class="compilation__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/compilation/2--mobile.webp"
+									media="(max-width: 767px)" />
+								<source srcset="./images/dest/compilation/2--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/2--tablet.webp"
+									media="(max-width: 1199px)" />
+								<source srcset="./images/dest/compilation/2--tablet.png" media="(max-width: 1199px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/2.webp">
+								<img src="./images/dest/compilation/2.png" alt="img" class="compilation__img">
+							</picture>
 							<div class="compilation__mask"></div>
 							<h3 class="compilation__inner__title">
 								Патронташи
@@ -730,7 +768,16 @@
 						</a>
 
 						<a href="#" class="compilation__item">
-							<img src="./images/dest/compilation/3.png" alt="img" class="compilation__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/compilation/3--mobile.webp"
+									media="(max-width: 767px)" />
+								<source srcset="./images/dest/compilation/3--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/3--tablet.webp"
+									media="(max-width: 1199px)" />
+								<source srcset="./images/dest/compilation/3--tablet.png" media="(max-width: 1199px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/3.webp">
+								<img src="./images/dest/compilation/3.png" alt="img" class="compilation__img">
+							</picture>
 							<div class="compilation__mask"></div>
 							<span class="compilation__sale">
 								до -20%
@@ -741,7 +788,16 @@
 						</a>
 
 						<a href="#" class="compilation__item">
-							<img src="./images/dest/compilation/4.png" alt="img" class="compilation__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/compilation/4--mobile.webp"
+									media="(max-width: 767px)" />
+								<source srcset="./images/dest/compilation/4--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/4--tablet.webp"
+									media="(max-width: 1199px)" />
+								<source srcset="./images/dest/compilation/4--tablet.png" media="(max-width: 1199px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/4.webp">
+								<img src="./images/dest/compilation/4.png" alt="img" class="compilation__img">
+							</picture>
 							<div class="compilation__mask"></div>
 							<h3 class="compilation__inner__title">
 								Очки
@@ -749,7 +805,16 @@
 						</a>
 
 						<a href="#" class="compilation__item">
-							<img src="./images/dest/compilation/5.png" alt="img" class="compilation__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/compilation/5--mobile.webp"
+									media="(max-width: 767px)" />
+								<source srcset="./images/dest/compilation/5--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/5--tablet.webp"
+									media="(max-width: 1199px)" />
+								<source srcset="./images/dest/compilation/5--tablet.png" media="(max-width: 1199px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/5.webp">
+								<img src="./images/dest/compilation/5.png" alt="img" class="compilation__img">
+							</picture>
 							<div class="compilation__mask"></div>
 							<h3 class="compilation__inner__title">
 								Приманки
@@ -757,7 +822,16 @@
 						</a>
 
 						<a href="#" class="compilation__item">
-							<img src="./images/dest/compilation/6.png" alt="img" class="compilation__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/compilation/6--mobile.webp"
+									media="(max-width: 767px)" />
+								<source srcset="./images/dest/compilation/6--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/6--tablet.webp"
+									media="(max-width: 1199px)" />
+								<source srcset="./images/dest/compilation/6--tablet.png" media="(max-width: 1199px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/6.webp">
+								<img src="./images/dest/compilation/6.png" alt="img" class="compilation__img">
+							</picture>
 							<div class="compilation__mask"></div>
 							<h3 class="compilation__inner__title">
 								Ножи
@@ -765,7 +839,16 @@
 						</a>
 
 						<a href="#" class="compilation__item">
-							<img src="./images/dest/compilation/7.png" alt="img" class="compilation__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/compilation/7--mobile.webp"
+									media="(max-width: 767px)" />
+								<source srcset="./images/dest/compilation/7--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/7--tablet.webp"
+									media="(max-width: 1199px)" />
+								<source srcset="./images/dest/compilation/7--tablet.png" media="(max-width: 1199px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/7.webp">
+								<img src="./images/dest/compilation/7.png" alt="img" class="compilation__img">
+							</picture>
 							<div class="compilation__mask"></div>
 							<h3 class="compilation__inner__title">
 								Рыболовное снаряжение
@@ -773,7 +856,16 @@
 						</a>
 
 						<a href="#" class="compilation__item">
-							<img src="./images/dest/compilation/8.png" alt="img" class="compilation__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/compilation/8--mobile.webp"
+									media="(max-width: 767px)" />
+								<source srcset="./images/dest/compilation/8--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/8--tablet.webp"
+									media="(max-width: 1199px)" />
+								<source srcset="./images/dest/compilation/8--tablet.png" media="(max-width: 1199px)" />
+								<source type="image/webp" srcset="./images/dest/compilation/8.webp">
+								<img src="./images/dest/compilation/8.png" alt="img" class="compilation__img">
+							</picture>
 							<div class="compilation__mask"></div>
 							<span class="compilation__sale">
 								до -20%
@@ -781,6 +873,10 @@
 							<h3 class="compilation__inner__title">
 								Фонари
 							</h3>
+						</a>
+
+						<a href="#" class="compilation__item compilation__item--special">
+							Смотреть все
 						</a>
 					</div>
 					<div class="compilation__wrapper">
@@ -805,34 +901,52 @@
 					</button>
 					<div class="brands__slides" id="brandsSlider">
 						<div class="brands__slide">
-							<img src="./images/dest/brands/1.png" alt="brand" class="brands__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/brands/1.webp">
+								<img src="./images/dest/brands/1.png" alt="brand" class="brands__img">
+							</picture>
 						</div>
 						<div class="brands__slide">
-							<img src="./images/dest/brands/2.png" alt="brand" class="brands__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/brands/2.webp">
+								<img src="./images/dest/brands/2.png" alt="brand" class="brands__img">
+							</picture>
 						</div>
 						<div class="brands__slide">
-							<img src="./images/dest/brands/3.png" alt="brand" class="brands__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/brands/3.webp">
+								<img src="./images/dest/brands/3.png" alt="brand" class="brands__img">
+							</picture>
 						</div>
 						<div class="brands__slide">
-							<img src="./images/dest/brands/4.png" alt="brand" class="brands__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/brands/4.webp">
+								<img src="./images/dest/brands/4.png" alt="brand" class="brands__img">
+							</picture>
 						</div>
 						<div class="brands__slide">
-							<img src="./images/dest/brands/5.png" alt="brand" class="brands__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/brands/5.webp">
+								<img src="./images/dest/brands/5.png" alt="brand" class="brands__img">
+							</picture>
 						</div>
 						<div class="brands__slide">
-							<img src="./images/dest/brands/6.png" alt="brand" class="brands__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/brands/6.webp">
+								<img src="./images/dest/brands/6.png" alt="brand" class="brands__img">
+							</picture>
 						</div>
 						<div class="brands__slide">
-							<img src="./images/dest/brands/7.png" alt="brand" class="brands__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/brands/7.webp">
+								<img src="./images/dest/brands/7.png" alt="brand" class="brands__img">
+							</picture>
 						</div>
 						<div class="brands__slide">
-							<img src="./images/dest/brands/3.png" alt="brand" class="brands__img">
-						</div>
-						<div class="brands__slide">
-							<img src="./images/dest/brands/1.png" alt="brand" class="brands__img">
-						</div>
-						<div class="brands__slide">
-							<img src="./images/dest/brands/2.png" alt="brand" class="brands__img">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/brands/2.webp">
+								<img src="./images/dest/brands/2.png" alt="brand" class="brands__img">
+							</picture>
 						</div>
 					</div>
 					<button class="brands__arrow brands__arrow--next">
@@ -860,10 +974,13 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/1--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/1--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/1--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/1--tablet.png" media="(max-width: 1199px)" />
 								<source type="image/webp" srcset="./images/dest/products/1.webp">
 								<img src="./images/dest/products/1.png" alt="product" class="popular__img">
 							</picture>
-
 							<h3 class="popular__inner__title">
 								Катушка Abu Garcia Salty Stage Concept Free L
 							</h3>
@@ -881,6 +998,10 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/2--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/2--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/2--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/2--tablet.png" media="(max-width: 1199px)" />
 								<source type="image/webp" srcset="./images/dest/products/2.webp">
 								<img src="./images/dest/products/2.png" alt="product" class="popular__img">
 							</picture>
@@ -902,6 +1023,10 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/3--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/3--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/3--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/3--tablet.png" media="(max-width: 1199px)" />
 								<source type="image/webp" srcset="./images/dest/products/3.webp">
 								<img src="./images/dest/products/3.png" alt="product" class="popular__img">
 							</picture>
@@ -923,6 +1048,10 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/4--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/4--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/4--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/4--tablet.png" media="(max-width: 1199px)" />
 								<source type="image/webp" srcset="./images/dest/products/4.webp">
 								<img src="./images/dest/products/4.png" alt="product" class="popular__img">
 							</picture>
@@ -944,10 +1073,13 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/1--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/1--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/1--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/1--tablet.png" media="(max-width: 1199px)" />
 								<source type="image/webp" srcset="./images/dest/products/1.webp">
 								<img src="./images/dest/products/1.png" alt="product" class="popular__img">
 							</picture>
-
 							<h3 class="popular__inner__title">
 								Катушка Abu Garcia Salty Stage Concept Free L
 							</h3>
@@ -965,48 +1097,10 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
-								<source type="image/webp" srcset="./images/dest/products/2.webp">
-								<img src="./images/dest/products/2.png" alt="product" class="popular__img">
-							</picture>
-
-							<h3 class="popular__inner__title">
-								Катушка Abu Garcia Salty Stage Concept Free L
-							</h3>
-						</span>
-						<span class="popular__item__bot">
-							<p class="popular__description">
-								Norstream
-							</p>
-							<span class="popular__price">
-								9 718 руб
-							</span>
-						</span>
-					</a>
-
-					<a href="#" class="popular__item">
-						<span class="popular__item__top">
-							<picture decoding="async">
-								<source type="image/webp" srcset="./images/dest/products/1.webp">
-								<img src="./images/dest/products/1.png" alt="product" class="popular__img">
-							</picture>
-
-							<h3 class="popular__inner__title">
-								Катушка Abu Garcia Salty Stage Concept Free L
-							</h3>
-						</span>
-						<span class="popular__item__bot">
-							<p class="popular__description">
-								Abu Garcia
-							</p>
-							<span class="popular__price">
-								30 251 руб
-							</span>
-						</span>
-					</a>
-
-					<a href="#" class="popular__item">
-						<span class="popular__item__top">
-							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/2--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/2--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/2--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/2--tablet.png" media="(max-width: 1199px)" />
 								<source type="image/webp" srcset="./images/dest/products/2.webp">
 								<img src="./images/dest/products/2.png" alt="product" class="popular__img">
 							</picture>
@@ -1028,6 +1122,59 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/1--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/1--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/1--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/1--tablet.png" media="(max-width: 1199px)" />
+								<source type="image/webp" srcset="./images/dest/products/1.webp">
+								<img src="./images/dest/products/1.png" alt="product" class="popular__img">
+							</picture>
+							<h3 class="popular__inner__title">
+								Катушка Abu Garcia Salty Stage Concept Free L
+							</h3>
+						</span>
+						<span class="popular__item__bot">
+							<p class="popular__description">
+								Abu Garcia
+							</p>
+							<span class="popular__price">
+								30 251 руб
+							</span>
+						</span>
+					</a>
+
+					<a href="#" class="popular__item">
+						<span class="popular__item__top">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/2--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/2--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/2--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/2--tablet.png" media="(max-width: 1199px)" />
+								<source type="image/webp" srcset="./images/dest/products/2.webp">
+								<img src="./images/dest/products/2.png" alt="product" class="popular__img">
+							</picture>
+
+							<h3 class="popular__inner__title">
+								Кастинговое удилище Norstream X-Crosser 782M
+							</h3>
+						</span>
+						<span class="popular__item__bot">
+							<p class="popular__description">
+								Norstream
+							</p>
+							<span class="popular__price">
+								9 718 руб
+							</span>
+						</span>
+					</a>
+
+					<a href="#" class="popular__item">
+						<span class="popular__item__top">
+							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/3--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/3--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/3--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/3--tablet.png" media="(max-width: 1199px)" />
 								<source type="image/webp" srcset="./images/dest/products/3.webp">
 								<img src="./images/dest/products/3.png" alt="product" class="popular__img">
 							</picture>
@@ -1049,6 +1196,10 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/4--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/4--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/4--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/4--tablet.png" media="(max-width: 1199px)" />
 								<source type="image/webp" srcset="./images/dest/products/4.webp">
 								<img src="./images/dest/products/4.png" alt="product" class="popular__img">
 							</picture>
@@ -1070,10 +1221,13 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/1--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/1--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/1--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/1--tablet.png" media="(max-width: 1199px)" />
 								<source type="image/webp" srcset="./images/dest/products/1.webp">
 								<img src="./images/dest/products/1.png" alt="product" class="popular__img">
 							</picture>
-
 							<h3 class="popular__inner__title">
 								Катушка Abu Garcia Salty Stage Concept Free L
 							</h3>
@@ -1091,12 +1245,16 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/2--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/2--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/2--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/2--tablet.png" media="(max-width: 1199px)" />
 								<source type="image/webp" srcset="./images/dest/products/2.webp">
 								<img src="./images/dest/products/2.png" alt="product" class="popular__img">
 							</picture>
 
 							<h3 class="popular__inner__title">
-								Катушка Abu Garcia Salty Stage Concept Free L
+								Кастинговое удилище Norstream X-Crosser 782M
 							</h3>
 						</span>
 						<span class="popular__item__bot">
@@ -1132,20 +1290,23 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
-								<source type="image/webp" srcset="./images/dest/products/2.webp">
-								<img src="./images/dest/products/2.png" alt="product" class="popular__img">
+								<source type="image/webp" srcset="./images/dest/products/1--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/1--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/1--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/1--tablet.png" media="(max-width: 1199px)" />
+								<source type="image/webp" srcset="./images/dest/products/1.webp">
+								<img src="./images/dest/products/1.png" alt="product" class="popular__img">
 							</picture>
-
 							<h3 class="popular__inner__title">
-								Кастинговое удилище Norstream X-Crosser 782M
+								Катушка Abu Garcia Salty Stage Concept Free L
 							</h3>
 						</span>
 						<span class="popular__item__bot">
 							<p class="popular__description">
-								Norstream
+								Abu Garcia
 							</p>
 							<span class="popular__price">
-								9 718 руб
+								30 251 руб
 							</span>
 						</span>
 					</a>
@@ -1153,6 +1314,10 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
+								<source type="image/webp" srcset="./images/dest/products/4--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/4--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/4--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/4--tablet.png" media="(max-width: 1199px)" />
 								<source type="image/webp" srcset="./images/dest/products/4.webp">
 								<img src="./images/dest/products/4.png" alt="product" class="popular__img">
 							</picture>
@@ -1174,20 +1339,24 @@
 					<a href="#" class="popular__item">
 						<span class="popular__item__top">
 							<picture decoding="async">
-								<source type="image/webp" srcset="./images/dest/products/1.webp">
-								<img src="./images/dest/products/1.png" alt="product" class="popular__img">
+								<source type="image/webp" srcset="./images/dest/products/2--mobile.webp" media="(max-width: 767px)" />
+								<source srcset="./images/dest/products/2--mobile.png" media="(max-width: 767px)" />
+								<source type="image/webp" srcset="./images/dest/products/2--tablet.webp" media="(max-width: 1199px)" />
+								<source srcset="./images/dest/products/2--tablet.png" media="(max-width: 1199px)" />
+								<source type="image/webp" srcset="./images/dest/products/2.webp">
+								<img src="./images/dest/products/2.png" alt="product" class="popular__img">
 							</picture>
 
 							<h3 class="popular__inner__title">
-								Катушка Abu Garcia Salty Stage Concept Free L
+								Кастинговое удилище Norstream X-Crosser 782M
 							</h3>
 						</span>
 						<span class="popular__item__bot">
 							<p class="popular__description">
-								Abu Garcia
+								Norstream
 							</p>
 							<span class="popular__price">
-								30 251 руб
+								9 718 руб
 							</span>
 						</span>
 					</a>
@@ -1499,7 +1668,7 @@
 									Адрес магазина:
 								</div>
 								<div class="footer__contact__value">
-									Москва, ул.Плеханова, д.12
+									Москва,<br class="no-xl md"> ул.Плеханова, д.12
 								</div>
 							</div>
 						</div>
@@ -1648,11 +1817,51 @@
 	</div>
 	<!-- Copyright END -->
 
+	<!-- Modals -->
+	<div class="mask"></div>
+
+	<div class="modal" id="recallModal">
+		<form id="recallForm" name="recallForm" class="modal__form">
+			<div class="modal__wrapper">
+
+				<div class="modal__header">
+					<h3 class="modal__title">
+						Обратный звонок
+					</h3>
+					<button type="button" class="modal__close" id="recallClose">
+						<img src="./images/dest/icons/close.svg" alt="close">
+					</button>
+				</div>
+
+				<div class="modal__body">
+					<p class="modal__text">
+						Укажите ваш номер телефона в международном формате
+					</p>
+					<input type="tel" class="modal__phone" name="phone" id="phone" placeholder="+7 (___) ___ - ___" required>
+					<div class="modal__captcha">
+						reCAPTCHA
+					</div>
+				</div>
+
+				<div class="modal__bot">
+					<button class="btn modal__btn" type="submit">
+						Заказать звонок
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<button type="button" class="button__up" id="buttonUp">
+		<img src="./images/dest/icons/up.svg" alt="up">
+	</button>
+	<!-- Modals END -->
+
 	<!-- jQuery -->
 	<script src="./js/include/jquery.min.js"></script>
 
 	<!-- jQuery maskedinput -->
-	<!-- <script src="./js/include/jquery.maskedinput.min.js"></script> -->
+	<script src="./js/include/jquery.maskedinput.min.js"></script>
 
 	<!-- Slick -->
 	<script src="./js/include/slick.min.js"></script>

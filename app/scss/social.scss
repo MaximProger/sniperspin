@@ -1,0 +1,22 @@
+// Social
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.social__item {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 30px;
+  transition: all 0.5s linear;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+// Social END

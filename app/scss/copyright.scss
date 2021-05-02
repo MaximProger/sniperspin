@@ -1,0 +1,45 @@
+// Copyright
+.copyright {
+  padding-top: 15px;
+  padding-bottom: 28px;
+  background: #fff;
+}
+
+.copyright__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright__item {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
+  display: inline-block;
+  transition: all 0.2s linear;
+
+  &--link {
+    border-bottom: 1px solid #828282;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .copyright {
+    padding-top: 15px;
+    padding-bottom: 22px;
+  }
+
+  .copyright__item {
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: $mobile) {
+}
+// Copyright END

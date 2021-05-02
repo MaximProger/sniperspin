@@ -1,0 +1,132 @@
+// Header
+.header {
+  background: $black;
+  padding: 31px 0;
+
+  .container {
+    position: relative;
+  }
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__burger {
+  margin-right: 43px;
+  cursor: pointer;
+  span {
+    display: block;
+    width: 45px;
+    height: 33px;
+    background: url("../images/dest/icons/burger.svg") no-repeat center;
+    transition: all 0.2s linear;
+  }
+
+  &:hover,
+  &--active {
+    span {
+      background: url("../images/dest/icons/burger--orange.svg") no-repeat
+        center;
+    }
+  }
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__btns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 51px;
+}
+
+.header__btns__item {
+  display: block;
+  text-decoration: none;
+  margin-left: 35px;
+  position: relative;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover {
+    .header__btns__icon {
+      opacity: 0.7;
+    }
+  }
+}
+
+.header__btns__icon {
+  transition: all 0.2s linear;
+}
+
+.header__btns__value {
+  position: absolute;
+  top: -10px;
+  right: -17px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #fff;
+}
+
+@media (max-width: $tablet) {
+  .header__burger {
+    margin-right: 25px;
+    span {
+      width: 37px;
+      height: 28px;
+      background: url("../images/dest/icons/burger--tablet.svg") no-repeat
+        center;
+    }
+
+    &:hover {
+      span {
+        background: url("../images/dest/icons/burger--tablet--active.svg")
+          no-repeat center;
+      }
+    }
+  }
+
+  .header__btns__item {
+    img {
+      max-width: 23px;
+      width: 100%;
+      min-width: 23px;
+    }
+  }
+
+  .header__btns {
+    margin-left: 25px;
+    padding-right: 10px;
+  }
+
+  .header__btns__item {
+    margin-left: 45px;
+  }
+
+  .header__btns__value {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    right: -15px;
+  }
+}
+
+@media (max-width: $mobile) {
+}
+// Header END
