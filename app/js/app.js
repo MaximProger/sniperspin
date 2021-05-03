@@ -25,6 +25,16 @@ $(document).ready(function () {
     }
   });
 
+  $(window).click((evt) => {
+    const target = evt.target;
+    if (
+      !target.closest(".dropdown--desktop") &&
+      !target.closest(".header__burger")
+    ) {
+      $("#dropdownMenu").slideUp();
+    }
+  });
+
   // // Слайдер интро
   $("#introSlider").not(".slick-initialized").slick({
     slidesToShow: 1,
@@ -155,7 +165,7 @@ $(document).ready(function () {
   // Макса для телефона
   $("#phone").mask("+7 (999) 999 - 9999");
 
-  // Молальное окно
+  // Модальное окно
   $(".mask").click(() => {
     $(".mask").fadeOut();
     $("#recallModal").slideUp(300);
@@ -166,9 +176,7 @@ $(document).ready(function () {
     evt.preventDefault();
     $(".mask").fadeIn();
     $("#recallModal").slideDown(500);
-    $("html")
-      .addClass("noscroll")
-      .css("top", "-" + curScrollTop + "px");
+    $("html").addClass("noscroll");
   });
 
   $(".modal__close").click((evt) => {
@@ -181,7 +189,6 @@ $(document).ready(function () {
   // Кнопка наверх
   var button = $("#buttonUp");
   $(window).scroll(function () {
-    console.log($(this).scrollTop());
     if ($(this).scrollTop() > 300) {
       button.fadeIn();
     } else {
