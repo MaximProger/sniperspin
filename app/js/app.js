@@ -249,4 +249,32 @@ $(document).ready(function () {
     $(".description__hidden").slideDown();
     $(".description__more").fadeOut();
   });
+
+  // Показать ещё в товарах
+  $("#showPopular").click((evt) => {
+    evt.preventDefault();
+    $(".popular__item--hide").slideDown(700);
+    $(".popular__item").css({ display: "flex" });
+    $(".popular__btn__wrapper").hide();
+  });
+
+  var header = $("#header");
+  var introH = $("#intro").innerHeight();
+  var scrollOffset = $(window).scrollTop();
+
+  /* Fixed Header */
+  checkScroll(scrollOffset);
+
+  $(window).on("scroll", function () {
+    scrollOffset = $(this).scrollTop();
+    checkScroll(scrollOffset);
+  });
+
+  function checkScroll(scrollOffset) {
+    if (scrollOffset >= introH) {
+      header.addClass("header--fixed");
+    } else {
+      header.removeClass("header--fixed");
+    }
+  }
 });

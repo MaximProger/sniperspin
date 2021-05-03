@@ -43,6 +43,10 @@
       color: $orange;
     }
   }
+
+  &--hide {
+    display: none;
+  }
 }
 
 .popular__img {
