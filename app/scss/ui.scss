@@ -113,6 +113,10 @@ body {
   overflow: hidden;
 }
 
+.main {
+  min-height: 100vh;
+}
+
 @media (max-width: $tablet) {
   body {
     font-size: 14px;

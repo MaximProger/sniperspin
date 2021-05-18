@@ -277,4 +277,42 @@ $(document).ready(function () {
       header.removeClass("header--fixed");
     }
   }
+
+  // Новости "Показать ещё"
+  $("#showNews").click((evt) => {
+    evt.preventDefault();
+    $("#showNews").fadeOut(500);
+    $(".blog__item").removeClass("blog__item--hide");
+  });
+
+  if ($(window).width() <= "1199") {
+    $("#newsInnerRight")
+      .not(".slick-initialized")
+      .slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        autoplay: false,
+        arrows: false,
+        centerMode: false,
+        asNavFor: "#navNewsInnerRight",
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 1,
+              centerMode: false,
+            },
+          },
+        ],
+      });
+
+    // Навигация для слайдера
+    $("#navNewsInnerRight").not(".slick-initialized").slick({
+      arrows: false,
+      slidesToShow: 2,
+      asNavFor: "#newsInnerRight",
+      focusOnSelect: true,
+    });
+  }
 });

@@ -1,0 +1,37 @@
+.breadcrumbs {
+  margin-bottom: 43px;
+}
+
+.breadcrumbs__inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.breadcrumbs__link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #828282;
+  transition: all 0.2s linear;
+
+  &:hover,
+  &--current {
+    color: $orange;
+  }
+}
+
+.breadcrumbs__arrow {
+  margin: 0 10px;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+  .breadcrumbs {
+    margin-bottom: 30px;
+  }
+}

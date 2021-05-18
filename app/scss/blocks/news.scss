@@ -152,6 +152,62 @@
   }
 }
 
+.news__inner__wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.news__inner__left {
+  max-width: 770px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .blog__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.news__inner__right {
+  max-width: 370px;
+  width: 100%;
+  min-height: 10000px;
+
+  .news__item {
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.news__inner__right__wrapper {
+  position: sticky;
+  top: 0;
+}
+
+.news__inner__bot {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.news__inner__btn {
+  width: 100%;
+  height: 44px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 @media (max-width: $tablet) {
   .news__title {
     font-weight: 600;
@@ -179,6 +235,47 @@
   .news__description {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  .news__inner__wrapper {
+    flex-direction: column;
+  }
+
+  .news__inner__left {
+    max-width: 100%;
+    order: 1;
+  }
+
+  .news__inner__right {
+    max-width: 100%;
+    order: 3;
+    margin-top: 60px;
+  }
+
+  .news__inner__right__wrapper {
+    .slick-list {
+      overflow-y: visible !important;
+      padding-top: 20px !important;
+      padding-bottom: 0px !important;
+    }
+
+    .slick-track {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+  }
+
+  .news__inner__bot {
+    order: 2;
+    margin-top: 0;
+  }
+
+  .news__inner__nav {
+    display: block;
   }
 }
 
@@ -237,6 +334,35 @@
   .news__inner__link {
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .news__inner__left {
+    justify-content: center;
+
+    .blog__item {
+      height: auto;
+      margin-bottom: 20px;
+
+      .news__inner__title {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        margin-bottom: 12px;
+      }
+
+      .news__description {
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+
+    .blog__content {
+      padding: 15px 20px 25px 20px;
+    }
+  }
+
+  .news__inner__right {
+    margin-top: 20px;
   }
 }
 // News END

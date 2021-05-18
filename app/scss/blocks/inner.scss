@@ -1,0 +1,26 @@
+.inner {
+  padding-top: 20px;
+  padding-bottom: 55px;
+}
+
+.inner__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+  .inner {
+    padding-bottom: 40px;
+  }
+  .inner__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}

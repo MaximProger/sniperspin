@@ -18,3 +18,12 @@
 @import "blocks/copyright";
 @import "blocks/modal";
 @import "blocks/menu";
+@import "blocks/breadcrumbs";
+@import "blocks/inner";
+@import "blocks/pagination";
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}
