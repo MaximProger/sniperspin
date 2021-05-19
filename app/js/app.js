@@ -344,4 +344,14 @@ $(document).ready(function () {
       .find(".comments__body__report");
     thisReport.toggleClass("comments__body__report--active");
   });
+
+  // Сортировка
+  $(".inner__sort__option").click(() => {
+    $(".inner__sort__menu").slideToggle();
+  });
+
+  $(".inner__sort__item").click(function () {
+    $(".inner__sort__value").text($(this).text());
+    $(".inner__sort__menu").slideUp();
+  });
 });
