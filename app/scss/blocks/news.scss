@@ -410,7 +410,7 @@
   .news__inner__left {
     max-width: 100%;
     order: 1;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 20px;
 
     .blog__item {
@@ -542,6 +542,8 @@
   }
 
   .news__inner__left {
+    flex-direction: column;
+    align-items: center;
     justify-content: flex-start;
 
     .blog__item {
