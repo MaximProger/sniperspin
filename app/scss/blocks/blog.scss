@@ -99,6 +99,20 @@
       max-width: 100% !important;
       height: 310px;
     }
+
+    &--big {
+      width: 100% !important;
+      max-width: 728px !important;
+      height: 432px;
+
+      .blog__img {
+        max-width: 100%;
+        width: 728px;
+      }
+
+      .blog__content {
+      }
+    }
   }
 
   .blog__img {
