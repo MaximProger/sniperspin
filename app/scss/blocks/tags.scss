@@ -1,0 +1,29 @@
+.tags__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tags__item {
+  display: inline-block;
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(92, 92, 92, 0.15);
+  text-decoration: none;
+  padding: 4px 15px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+}

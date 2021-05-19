@@ -315,4 +315,33 @@ $(document).ready(function () {
       focusOnSelect: true,
     });
   }
+
+  $("#newsDetailSlider")
+    .not(".slick-initialized")
+    .slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      infinite: true,
+      autoplay: false,
+      arrows: true,
+      nextArrow: $(".news__detail__nav__btn--next"),
+      prevArrow: $(".news__detail__nav__btn--prev"),
+      centerMode: false,
+      asNavFor: "#navNewsDetail",
+    });
+
+  $("#navNewsDetail").not(".slick-initialized").slick({
+    arrows: false,
+    slidesToShow: 3,
+    asNavFor: "#newsDetailSlider",
+    focusOnSelect: true,
+  });
+
+  $(".comments__item__btn").click(function (evt) {
+    evt.preventDefault();
+    const thisReport = $(this)
+      .parents(".comments__body")
+      .find(".comments__body__report");
+    thisReport.toggleClass("comments__body__report--active");
+  });
 });

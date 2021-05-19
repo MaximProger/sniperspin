@@ -1,0 +1,33 @@
+.read {
+  margin-bottom: 30px;
+}
+
+.read__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.read__title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: $tablet) {
+}
+
+@media (max-width: $mobile) {
+  .read__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 20px;
+  }
+
+  .read__list {
+    gap: 20px;
+  }
+}
