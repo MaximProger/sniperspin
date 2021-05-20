@@ -187,15 +187,34 @@ $(document).ready(function () {
   });
 
   // Кнопка наверх
-  var button = $("#buttonUp");
+
+  // получаем координаты элемента в контексте документа
+  function getCoords(elem) {
+    let box = elem.getBoundingClientRect();
+
+    return {
+      top: box.top + pageYOffset,
+      left: box.left + pageXOffset,
+    };
+  }
+  const documentHeight = $("html").innerHeight();
+  const button = document.querySelector("#buttonUp");
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-      button.fadeIn();
+    const maxHeight = documentHeight - getCoords(button).top;
+    console.log(maxHeight);
+    if ($(this).scrollTop() > 300 && maxHeight > 595) {
+      button.classList.add("button__up--active");
+    } else if (maxHeight < 595) {
+      button.classList.add("button__up--active");
+      button.classList.add("button__up--absolute");
+    } else if (maxHeight > 595) {
+      button.classList.remove("button__up--absolute");
     } else {
-      button.fadeOut();
+      button.classList.remove("button__up--active");
+      button.classList.remove("button__up--absolute");
     }
   });
-  button.on("click", function () {
+  button.addEventListener("click", function () {
     $("body, html").animate(
       {
         scrollTop: 0,

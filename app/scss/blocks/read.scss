@@ -24,6 +24,13 @@
 }
 
 @media (max-width: $mobile) {
+  .read {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   .read__title {
     font-weight: 600;
     font-size: 24px;
@@ -33,5 +40,10 @@
 
   .read__list {
     gap: 20px;
+    max-width: 280px;
+  }
+
+  .read__bot {
+    width: 100%;
   }
 }
